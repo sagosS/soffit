@@ -1,0 +1,20 @@
+$primary: "pink";
+@import 'ember-paper';
+// .md-toolbar-tools{
+//   background-color: color("pink", "700");
+// }
+body{
+  color: #655555;
+  background-color: #f9f1f4;
+}
+.one,.two{
+  height-min: 500px;
+  padding-bottom: 20px;
+}
+.one{
+  background-color: color("pink");
+  color: #ffffff;
+}
+.shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
