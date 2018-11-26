@@ -1,0 +1,32 @@
+
+<div class="layout-row">
+  <div class="flex"></div>
+  <div class="flex-85 justifyColumn paddingColumn">
+    <h1>Как узнать стоимость Вашего потолка?</h1>
+    <p>
+      <h3>Воспользуйтесь нашим калькулятором!</h3>
+    </p>
+    <p>
+      {{paper-input class="flex-30" label="Ширина потолка" placeholder="" value=name onChange=(action (mut name))}}
+      {{paper-input class="flex-30" label="Длинна потолка" placeholder="" value=name onChange=(action (mut name))}}
+      {{paper-input class="flex-30" label="Колличество углов" placeholder="" value=name onChange=(action (mut name))}}
+    </p>
+    <p>
+      {{#paper-radio toggle=true value="Toggable" groupValue=toggleValue
+        onChange=(action (mut toggleValue))}}
+        Установить свет
+      {{/paper-radio}}
+      {{#paper-select
+        disabled=disableSelect
+        label="Колличество света"
+        options=states
+        selected=userState
+        onChange=(action (mut userState))
+        as |state|}}
+        {{state.abbrev}}
+      {{/paper-select}}
+    </p>
+  </div>
+  <div class="flex"></div>
+</div>
+{{yield}}

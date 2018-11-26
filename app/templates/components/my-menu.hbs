@@ -1,0 +1,23 @@
+{{#paper-toolbar}}
+  {{#paper-toolbar-tools}}
+    <h1>
+      Soffit Ceiling
+    </h1>
+    <div class="layout-padding"></div>
+    <span class="flex-auto layout-align-end">
+      {{input
+        value=value
+        class="light"
+        placeholder="Smart Input"
+      }}
+    </span>
+    <div class="layout-padding"></div>
+    {{#paper-button iconButton=true title="Chat"}}
+      {{paper-icon "chat"}}
+    {{/paper-button}}
+    {{#paper-button iconButton=true title="Phone Call"}}
+      {{paper-icon "contact_phone"}}
+    {{/paper-button}}
+  {{/paper-toolbar-tools}}
+{{/paper-toolbar}}
+{{yield}}
